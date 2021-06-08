@@ -12,6 +12,7 @@ V,gcr-devel,is required for the compilation of some programs.
 V,fontconfig-devel,is required for the compilation of some programs.
 ,i3-gaps,is the main graphical user interface and window manager.
 ,ranger,file manager
+,polybar,status bar
 ,ttf-linux-libertine,provides the sans and serif fonts for LARBS.
 A,lf-git,is an extensive terminal file manager that everyone likes.
 ,arandr,is a UI for screen adjustment.
