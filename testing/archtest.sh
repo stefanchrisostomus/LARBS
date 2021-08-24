@@ -34,7 +34,7 @@ IFS=' ' read -ra SIZE <<< $(cat psize)
 
 re='^[0-9]+$'
 if ! [ ${#SIZE[@]} -eq 2 ] || ! [[ ${SIZE[0]} =~ $re ]] || ! [[ ${SIZE[1]} =~ $re ]] ; then
-    SIZE=(12 25);
+    SIZE=(8 30);
 fi
 
 timedatectl set-ntp true
@@ -45,7 +45,7 @@ n
 p
 
 
-+200M
++500M
 n
 p
 
@@ -93,7 +93,7 @@ ln -sf /usr/share/zoneinfo/$TZuser /etc/localtime
 hwclock --systohc
 
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-echo "en_US ISO-8859-1" >> /etc/locale.gen
+echo "fi_FI ISO-8859-1" >> /etc/locale.gen
 locale-gen
 
 pacman --noconfirm --needed -S networkmanager
